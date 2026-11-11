@@ -119,7 +119,7 @@ The maintainer merges; then verify the default-branch result, issue closure and 
 
 GitHub uses the supported default contribution files and issue/PR templates from this account's public .github repository when a target repository has no corresponding local override. A local ISSUE_TEMPLATE directory with valid forms/config replaces the shared issue-template set; templates are not merged automatically. Local PR templates also take precedence.
 
-These default files are not copied into clones. AGENTS.md and CLAUDE.md are not account-wide inherited instructions. Each active repository needs a short local entry point that tells agents to read its local rules and this shared guide. Read linked guidance explicitly; GitHub UI inheritance does not load it into an agent session.
+These default files are not copied into clones. AGENTS.md is not an account-wide inherited instruction file. Each active repository needs a short local entry point that tells agents to read its local rules and this shared guide. Read linked guidance explicitly; GitHub UI inheritance does not load it into an agent session.
 
 For offline work, use an accessible, maintainer-approved copy and record its revision; do not silently use a stale chat summary. If required guidance is unavailable, resolve access before editing. Changes to shared guidance are reviewed through PRs; repository-specific commands and exceptions remain local.
 

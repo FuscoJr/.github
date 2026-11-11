@@ -40,9 +40,12 @@ Use a task for a defined outcome and a bug report for an observed defect. Keep t
 | Ready | Scope and acceptance are clear enough to begin; dependencies are understood. |
 | In Progress | Work has started and remains active, even if another task is the current session's focus. |
 | In Review | A concrete result is ready for maintainer review or required validation. |
-| Done | Work is closed; consult the issue's closure reason to distinguish completed work from work closed as not planned. |
+| Done | Work is completed and its acceptance criteria are fulfilled. |
+| Cancelled | Work was explicitly abandoned or declined; retain the issue and its recorded reason, and close it as not planned. |
 
 The Review column, where present, has the same meaning as In Review. A started task may remain In Progress across sessions. Record its next step and blockers rather than pretending it is complete or moving it back solely because it is not today's focus. Select a small focus for each session; avoid two implementers editing the same task.
+
+Keep Cancelled items visible in a dedicated Project column for future reference. Record the cancellation reason in the issue, with a replacement issue link when relevant, rather than duplicating it in a separate document. Work deferred for later stays in Backlog. If cancelled work is resumed, reopen the issue, reassess its scope and acceptance criteria, and select the appropriate status. Ready indicates planning readiness, not permission for an agent to start independently.
 
 Use bug, documentation, enhancement and maintenance for type; add security where relevant. Labels are repository metadata and are not inherited with these templates; check they exist before relying on automatic form labels. Use a Project field for priority when needed; do not duplicate every status as a label. Security findings must not expose credentials or private client data in public issues.
 
@@ -110,7 +113,7 @@ Keep durable technical decisions in the repository and link them. Do not copy tr
 
 ## After review
 
-The maintainer merges; then verify the default-branch result, issue closure and Project state. Closed as not planned means remaining work was declined, not that its criteria passed. Do not check off unfinished criteria. Clean up task branches only with authorization.
+The maintainer merges; then verify the default-branch result, issue closure and Project state. Set Done only for completed work. Work explicitly abandoned or declined belongs in Cancelled, with the reason recorded in the issue and closure as not planned; this does not mean its criteria passed. Do not check off unfinished criteria. Check that Project automation does not move every closed issue to Done regardless of its closure reason. Clean up task branches only with authorization.
 
 ## Adoption and limits
 

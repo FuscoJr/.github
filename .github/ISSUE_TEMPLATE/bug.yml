@@ -1,0 +1,39 @@
+name: Bug report
+description: Report an observed defect with reproduction details.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the observed behaviour and its impact. Exclude secrets and personal data.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Start with...
+        2. Perform...
+        3. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and evidence
+      description: Version or commit, OS/runtime/browser where relevant, and sanitised evidence.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance and verification
+      description: Expected outcomes and regressions to check. Reuse existing tests/tools; demonstrate the check detects the original failure and passes with the fix when feasible. State limits.
+    validations:
+      required: true

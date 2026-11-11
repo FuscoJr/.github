@@ -1,0 +1,44 @@
+name: Task
+description: Define a focused piece of work before implementation.
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and objective
+      description: What should improve, for whom, and why?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and exclusions
+      description: State what belongs to this task and what must stay out.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Use observable outcomes rather than implementation steps alone.
+      placeholder: |
+        - [ ] First observable outcome
+        - [ ] Second observable outcome
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification approach
+      description: Relevant risks, existing tests/tools to reuse, and how to show checks detect the intended failure. Tests and CI may be part of this task; state unknowns.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and decisions
+      description: Link existing issues, real sub-issues and blockers. Recording a new finding does not authorise its implementation.
+  - type: textarea
+    id: execution
+    attributes:
+      label: Execution context (when assigned)
+      description: Implementation owner, task branch, integration base and workspace/worktree label. Do not include personal absolute paths.

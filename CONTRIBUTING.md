@@ -14,6 +14,8 @@ The maintainer chooses priorities, approves acceptance criteria and architectura
 4. Agree on the outcome, scope, exclusions, acceptance criteria and verification approach. Record unresolved decisions in the issue.
 5. Choose one implementation owner and record the issue, task branch, integration base and workspace/worktree label. Coordinate overlap before concurrent work.
 
+Keep planning proportional to the task. For small tasks, a concise issue or PR description is sufficient; reuse and link information already recorded rather than repeating it in another checklist, form or status document. This does not remove the need for clear scope, suitable verification or maintainer review.
+
 Tests and CI can be part of the delegated task; the maintainer does not have to write every test before implementation. Check the intended behaviour with the maintainer when it is unclear.
 
 ## Findings and sub-issues
